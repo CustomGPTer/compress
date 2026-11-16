@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compress: a free video compressor for Android</title>
+<meta name="description" content="Compress makes the videos on your Android phone smaller without a difference you can see, and keeps going with the screen off. Free, no adverts, nothing uploaded.">
+<meta name="author" content="Jonathan Jackson">
+<link rel="canonical" href="https://customgpter.github.io/compress/">
+<meta name="theme-color" content="#f2f7f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a120e" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Compress">
+<meta property="og:title" content="Compress: a free video compressor for Android">
+<meta property="og:description" content="Compress makes the videos on your Android phone smaller without a difference you can see, and keeps going with the screen off. Free, no adverts, nothing uploaded.">
+<meta property="og:url" content="https://customgpter.github.io/compress/">
+<meta property="og:image" content="https://customgpter.github.io/compress/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A one-minute video shrinking from 128 MB to 39 MB with its picture size, date and sound kept, beside the Compress name">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/literata-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/literata-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css?v=1">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Compress","url":"https://customgpter.github.io/compress/","description":"Compress is an Android app that makes videos smaller without a difference you can see, at the full picture size, and carries on with the screen off. The work is done on the phone.","applicationCategory":"MultimediaApplication","applicationSubCategory":"Video compressor","operatingSystem":"Android 10 or later","softwareVersion":"1.1","downloadUrl":"https://github.com/CustomGPTer/compress/releases/latest/download/Compress.apk","releaseNotes":"https://customgpter.github.io/compress/releases.html","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"inLanguage":"en-GB","image":"https://customgpter.github.io/compress/assets/og.png","featureList":["Four quality levels","Fit a size","The full picture","Three formats","Two engines","Screen off, app closed","Skips what will not shrink","Trim, crop and turn","Join, GIF and audio","Dates, places and HDR","Compare","Originals and automation"],"author":{"@type":"Person","name":"Jonathan Jackson"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Compress","url":"https://customgpter.github.io/compress/","inLanguage":"en-GB"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Compress really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no paid version, no subscription and no adverts, and nothing in the app is locked."}},{"@type":"Question","name":"Is Compress on Google Play?","acceptedAnswer":{"@type":"Answer","text":"No. Compress is a personal project and is downloaded from this site as an Android app file. It needs Android 10 or later on a 64-bit phone, which covers almost every phone sold in recent years."}},{"@type":"Question","name":"Are my videos uploaded anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. Compress reads and writes videos on your phone, and it has no servers. It uses the internet for one thing only: to check for a newer version of itself."}},{"@type":"Question","name":"Will I see a difference?","acceptedAnswer":{"@type":"Answer","text":"On Visually identical and High you should not, at normal viewing. Compressing always discards something, and the lower settings trade more of it for a smaller file, so each setting says plainly what to expect. Use Compare to check a result for yourself before you delete anything."}},{"@type":"Question","name":"How much smaller will a video be?","acceptedAnswer":{"@type":"Answer","text":"It depends on the video and the setting. On High, Compress aims a one-minute 1080p video at about 39 MB, where a phone usually records that minute at 100 MB or more. A video that is already tightly packed, such as one downloaded from a website, may not shrink at all. Compress says so and skips it."}},{"@type":"Question","name":"Will my original be changed?","acceptedAnswer":{"@type":"Answer","text":"No. Compress saves a new copy, in Movies/Compress unless you choose another folder, and leaves the original alone. If you turn on Replace originals, you are asked after each batch to move the originals to Android's bin, where they stay for 30 days."}},{"@type":"Question","name":"Does it really work with the screen off?","acceptedAnswer":{"@type":"Answer","text":"Yes. Compress runs as a background task with a notification that shows progress, so you can turn the screen off or use another app. Recent versions of Android limit how long an app may do this in a day, to about six hours. If that limit is reached, Compress stops tidily and carries on when you next open it."}},{"@type":"Question","name":"What is the difference between Fast and Max quality?","acceptedAnswer":{"@type":"Answer","text":"Fast hands the work to the phone's video chip, which is quick and stays cool. Max quality does the work in software with the x264 and x265 encoders. It can squeeze a file smaller for the same picture, but it takes many times longer and warms the phone, so it is best left running on charge."}},{"@type":"Question","name":"Will the copy play on other devices?","acceptedAnswer":{"@type":"Answer","text":"A copy in HEVC plays on most phones, tablets, televisions and computers made since about 2017. If it has to play on something older, choose H.264 instead. AV1 files are the smallest and need a recent device or browser."}},{"@type":"Question","name":"How do I update Compress?","acceptedAnswer":{"@type":"Answer","text":"Compress tells you when it opens if a newer version is out. Download it from this site and install it over the one you have. Your settings and your queue are kept."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<a class="brand" href="./" aria-label="Compress home"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#12181e"/><g transform="translate(54 54) scale(1.3) translate(-54 -54)"><path fill="none" stroke="#e9eef3" stroke-width="4.5" stroke-linejoin="round" d="M41 43h26a5 5 0 0 1 5 5v12a5 5 0 0 1-5 5H41a5 5 0 0 1-5-5V48a5 5 0 0 1 5-5z"/><path fill="#e9eef3" d="M50.5 48.2l9.2 5.3a.6.6 0 0 1 0 1l-9.2 5.3a.6.6 0 0 1-.9-.5V48.7a.6.6 0 0 1 .9-.5z"/><path fill="none" stroke="#3ddc97" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" d="M54 24v12M47.5 30.5 54 37l6.5-6.5M54 84V72M47.5 77.5 54 71l6.5 6.5"/></g></svg><span>Compress</span></a>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="compare.html">Compare</a></li><li><a href="releases.html">Releases</a></li><li><a class="more-apps" href="more-apps.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="licences.html">Licences</a></li></ul></nav>
+</div>
+</header>
+<main id="main">
+<div class="hero">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<h1>Smaller videos, the same picture</h1>
+<p class="lede">Phone videos are far bigger than they need to be. Compress is an Android app that shrinks them without a difference you can see, at the full picture size unless you choose a smaller one. Start it, turn the screen off, and it tells you when it is done.</p>
+<p class="lede">It is free, with no adverts and nothing to unlock. The work is done on your phone, so your videos are never uploaded, and your originals are kept unless you say otherwise.</p>
+<p class="get"><a class="button" href="https://github.com/CustomGPTer/compress/releases/latest/download/Compress.apk">Download for Android</a></p>
+<p class="facts">Free, with nothing to unlock. Android 10 or later, 64-bit. No ads, no accounts, no uploads. <a href="compare.html">Compare</a> &middot; <a href="releases.html">Release notes</a></p>
+<p class="facts">Chrome may say the file might be harmful. It shows this for app files that do not come from Google Play. Choose Download anyway.</p>
+</div>
+<div class="demo" role="img" aria-label="An example in Compress. A one-minute video called Holiday.mp4 at 1920 by 1080. Two bars show its size: the original at 128 MB, and the compressed copy shrinking to 39 MB. Below, the picture size, date and sound are each marked Kept, and the size is marked 70% smaller. The buttons underneath read Share, Compare and Done."><div class="view"><div class="bar"><span class="dot"></span><span>Holiday.mp4</span><span class="next">Compress</span></div><div class="stage"><svg class="play" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="rgba(8,14,11,.6)"/><path fill="#fff" d="M19.5 15.5 33.5 24l-14 8.5z"/></svg><span class="meta">1920 &times; 1080 &middot; 1:00</span></div></div><div class="sheet"><div class="meter"><div class="m was"><span class="lab">Original</span><span class="track"><span class="fill"></span></span><span class="num">128 MB</span></div><div class="m now"><span class="lab">Compressed</span><span class="track"><span class="fill"></span></span><span class="num">39 MB</span></div></div><ul class="rows"><li class="row keep" style="--i:0;--j:0"><span class="k">Picture</span><span class="v">1920 &times; 1080</span><span class="t">Kept</span></li><li class="row keep" style="--i:1;--j:1"><span class="k">Date</span><span class="v">14 June 2026, 18:42</span><span class="t">Kept</span></li><li class="row keep" style="--i:2;--j:2"><span class="k">Sound</span><span class="v">Untouched</span><span class="t">Kept</span></li><li class="row go" style="--i:3;--j:3"><span class="k">Size</span><span class="v">128 MB</span><span class="t">70% smaller</span></li></ul><div class="acts"><span>Share</span><span>Compare</span><span class="do">Done</span></div></div></div>
+</div>
+</div>
+
+<section id="how" aria-labelledby="how-h">
+<div class="wrap">
+<h2 id="how-h">How it works</h2>
+<p class="intro">A phone has a fraction of a second to store each frame as it films, so it stores them loosely. Compress goes back over the same video with time to spare and packs it properly.</p>
+<ol class="steps">
+<li><h3>Pick your videos</h3><p>Tick up to three from your albums, or send them to Compress from your gallery with Share. The biggest are one tap away, with a total of the space you could free.</p></li>
+<li><h3>Choose how small</h3><p>Pick a quality level, or a size to fit, such as <span class="path">WhatsApp 16 MB</span>. Compress shows the size it expects and how long it should take before you start.</p></li>
+<li><h3>Leave it to it</h3><p>Tap <span class="path">Compress</span> and put the phone down. It works with the screen off, checks that the new file plays, and saves it. The original stays where it was.</p></li>
+</ol>
+</div>
+</section>
+
+<section id="features" aria-labelledby="features-h">
+<div class="wrap">
+<h2 id="features-h">Everything is in, and all of it is free</h2>
+<p class="intro">Making one video smaller takes two taps. The rest of the app is for the days you need more: a clip that has to fit an email, a film that needs its ends cut off, or a camera roll that has filled the phone.</p>
+<dl class="features">
+<div><dt>Four quality levels</dt><dd>Visually identical, High, Balanced and Small. Each one shows the size to expect for your own video before you choose it.</dd></div>
+<div><dt>Fit a size</dt><dd>WhatsApp 16 MB, Discord 10 MB, Gmail 25 MB, or a size of your own. If the first attempt lands over, it is redone a little smaller. The picture is only made smaller when there is no other way to keep it sharp.</dd></div>
+<div><dt>The full picture</dt><dd>A video keeps its original resolution unless you pick a smaller one, from 2160p down to 240p or a figure of your own. The frame rate can be lowered too, which saves a lot by itself.</dd></div>
+<div><dt>Three formats</dt><dd>HEVC by default, which can need about half the space of H.264 for the same picture. H.264 for anything that has to play everywhere. AV1 on phones whose video chip can write it.</dd></div>
+<div><dt>Two engines</dt><dd>Fast uses the phone's own video chip, and is the right choice nearly every time. Max quality uses the x264 and x265 encoders for the smallest file at a given quality, and takes many times longer.</dd></div>
+<div><dt>Screen off, app closed</dt><dd>Compressing carries on in the background with a progress notification, and picks up again after a restart. It pauses if the phone gets hot, and waits for the charger when the battery is under 15%.</dd></div>
+<div><dt>Skips what will not shrink</dt><dd>A video that is already small for its quality is left alone, and a result that comes out no smaller is thrown away. A switch turns this off for the times you are compressing for another reason.</dd></div>
+<div><dt>Trim, crop and turn</dt><dd>Cut the ends off, crop the edges with a box you drag to fit, rotate, mirror, speed up or slow down, and set the volume anywhere from silent to three times louder.</dd></div>
+<div><dt>Join, GIF and audio</dt><dd>Join up to three clips into one video, turn a clip into a GIF, or save the sound on its own.</dd></div>
+<div><dt>Dates, places and HDR</dt><dd>The copy keeps the original's date and details, so it sorts beside it in your gallery. One switch removes where it was filmed. HDR is kept, or converted for older screens.</dd></div>
+<div><dt>Compare</dt><dd>Put the original and the copy one over the other at any moment in the video, drag the divider across, and pinch to zoom right in.</dd></div>
+<div><dt>Originals and automation</dt><dd>Originals are kept unless you turn on Replace originals, which uses Android's 30-day bin. Overnight mode waits for the charger, and automatic mode compresses new camera videos while the phone charges. All three are off to begin with.</dd></div>
+</dl>
+</div>
+</section>
+
+<section id="permissions" aria-labelledby="permissions-h">
+<div class="wrap">
+<h2 id="permissions-h">What it asks of your phone</h2>
+<p class="intro">Compress has no access to your contacts, camera, microphone or location, and uses what it does have only for what is listed here.</p>
+<div class="scroll">
+<table>
+<thead><tr><th scope="col">Access</th><th scope="col">What Compress does with it</th><th scope="col">What it never does</th></tr></thead>
+<tbody>
+<tr><th scope="row">Your videos</th><td>Lists the videos on your phone, reads the ones you tick, and saves the smaller copies. It also reads the place stored inside a video, so that the copy can keep it.</td><td>Send a video, or anything else on your phone, anywhere.</td></tr>
+<tr><th scope="row">Notifications</th><td>Shows progress while the screen is off, and tells you when a video is done.</td><td>Advertise, or nag you to open the app.</td></tr>
+<tr><th scope="row">Internet access</th><td>Checks GitHub once a day for a newer version. Nothing else.</td><td>Upload a video, or pass on anything about one.</td></tr>
+<tr><th scope="row">Background running</th><td>Lets overnight and automatic modes start by themselves once the phone is on charge. You are asked only if you turn one of them on.</td><td>Run when there is nothing waiting to be compressed.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="after-table">The detail is in the <a href="privacy.html">privacy policy</a>.</p>
+</div>
+</section>
+
+<section id="privacy" aria-labelledby="privacy-h">
+<div class="wrap">
+<h2 id="privacy-h">Your videos are your business</h2>
+<ul class="plain">
+<li><h3>Nothing is uploaded</h3><p>Compress reads and writes videos on the phone. A film of your home, your children or your work goes no further than your own hand.</p></li>
+<li><h3>No accounts, no adverts</h3><p>There is nothing to sign up for and no advertising in the app. This site has no cookies and no tracking.</p></li>
+<li><h3>No servers</h3><p>Compress's developer runs no servers and collects nothing. There is no log of who uses the app or what they do with it.</p></li>
+</ul>
+</div>
+</section>
+
+<section id="free" aria-labelledby="free-h">
+<div class="wrap">
+<h2 id="free-h">Free, including what others charge for</h2>
+<p class="intro">Compress has no paid version and carries no adverts. Going by their makers' own Google Play listings, other well-known video compressors show adverts, and one keeps some of what it does for a paid version.</p>
+<dl class="features">
+<div><dt>No adverts</dt><dd>Proton Video Compressor by H. Arthur and Panda Video Compress &amp; Convert by Farluner Apps &amp; Games each say on their Google Play listings that they contain ads.</dd></div>
+<div><dt>Nothing held back</dt><dd>Panda's listing puts more than three videos at once, no ads and no promotional text on shared videos among the things its Premium adds.</dd></div>
+<div><dt>The tools are built in</dt><dd>Trim, crop, rotate, speed, join, GIF and audio-only are all part of Compress. There is nothing further to buy.</dd></div>
+<div><dt>Done on the phone</dt><dd>Compress needs no internet to compress a video, and nothing is sent anywhere.</dd></div>
+</dl>
+<p class="more"><a href="compare.html">See the full comparison, with sources</a></p>
+</div>
+</section>
+
+<section id="questions" aria-labelledby="questions-h">
+<div class="wrap">
+<h2 id="questions-h">Questions</h2>
+<div class="faq">
+<div><h3>Is Compress really free?</h3><p>Yes. There is no paid version, no subscription and no adverts, and nothing in the app is locked. <a href="compare.html">See the comparison</a>.</p></div><div><h3>Is Compress on Google Play?</h3><p>No. Compress is a personal project and is downloaded from this site as an Android app file. It needs Android 10 or later on a 64-bit phone, which covers almost every phone sold in recent years.</p></div><div><h3>Are my videos uploaded anywhere?</h3><p>No. Compress reads and writes videos on your phone, and it has no servers. It uses the internet for one thing only: to check for a newer version of itself. The detail is in the <a href="privacy.html#services">privacy policy</a>.</p></div><div><h3>Will I see a difference?</h3><p>On Visually identical and High you should not, at normal viewing. Compressing always discards something, and the lower settings trade more of it for a smaller file, so each setting says plainly what to expect. Use Compare to check a result for yourself before you delete anything.</p></div><div><h3>How much smaller will a video be?</h3><p>It depends on the video and the setting. On High, Compress aims a one-minute 1080p video at about 39 MB, where a phone usually records that minute at 100 MB or more. A video that is already tightly packed, such as one downloaded from a website, may not shrink at all. Compress says so and skips it.</p></div><div><h3>Will my original be changed?</h3><p>No. Compress saves a new copy, in Movies/Compress unless you choose another folder, and leaves the original alone. If you turn on Replace originals, you are asked after each batch to move the originals to Android's bin, where they stay for 30 days.</p></div><div><h3>Does it really work with the screen off?</h3><p>Yes. Compress runs as a background task with a notification that shows progress, so you can turn the screen off or use another app. Recent versions of Android limit how long an app may do this in a day, to about six hours. If that limit is reached, Compress stops tidily and carries on when you next open it.</p></div><div><h3>What is the difference between Fast and Max quality?</h3><p>Fast hands the work to the phone's video chip, which is quick and stays cool. Max quality does the work in software with the x264 and x265 encoders. It can squeeze a file smaller for the same picture, but it takes many times longer and warms the phone, so it is best left running on charge.</p></div><div><h3>Will the copy play on other devices?</h3><p>A copy in HEVC plays on most phones, tablets, televisions and computers made since about 2017. If it has to play on something older, choose H.264 instead. AV1 files are the smallest and need a recent device or browser.</p></div><div><h3>How do I update Compress?</h3><p>Compress tells you when it opens if a newer version is out. Download it from this site and install it over the one you have. Your settings and your queue are kept.</p></div>
+</div>
+</div>
+</section>
+
+<section id="get" aria-labelledby="get-h">
+<div class="wrap"><div class="measure">
+<h2 id="get-h">Getting Compress</h2>
+<p>Compress is a personal project and is free, with no paid version. It is downloaded from this site as an Android app file and is not on Google Play. It runs on 64-bit phones and tablets with Android 10 or later.</p>
+<p class="get"><a class="button" href="https://github.com/CustomGPTer/compress/releases/latest/download/Compress.apk">Download for Android</a></p>
+<p>When you download, Chrome may warn that the file might be harmful. It shows this warning for app files that do not come from Google Play; choose Download anyway. If you want to be sure the file is the real one, compare it with the checksum in the <a href="releases.html#checking">release notes</a>.</p>
+<p>Open the downloaded file to install it. The first time, Android asks you to allow your browser to install apps. Google Play Protect may also step in, because Compress is an app it has not seen before: choose More details, then Install anyway. To update, install the latest version over the one you have: your settings and your queue are kept. What changed in each version is in the <a href="releases.html">release notes</a>.</p>
+<p>Compress is free software, and its <a href="https://github.com/CustomGPTer/compress">source code</a> is public. The same developer makes <a href="more-apps.html">other free Android apps</a>. For a question, a problem, or anything about your data, <a href="https://github.com/CustomGPTer/compress/issues">open an issue on GitHub</a>.</p>
+</div></div>
+</section>
+</main>
+<footer class="colophon">
+<div class="wrap">
+<div>
+<p>&copy; 2026 Jonathan Jackson. Compress is an independent app.</p>
+<p>This site uses no cookies and no tracking. It is set in Literata and Atkinson Hyperlegible.</p>
+</div>
+<nav aria-label="Footer"><ul>
+<li><a href="./">Home</a></li>
+<li><a href="compare.html">Compare</a></li>
+<li><a href="releases.html">Release notes</a></li>
+<li><a href="more-apps.html">More apps</a></li>
+<li><a href="privacy.html">Privacy policy</a></li>
+<li><a href="terms.html">Terms of use</a></li>
+<li><a href="licences.html">Licences</a></li>
+<li><a href="https://github.com/CustomGPTer/compress">Source code</a></li>
+<li><a href="https://github.com/CustomGPTer/compress/issues">Contact</a></li>
+</ul></nav>
+</div>
+</footer>
+</body>
+</html>
