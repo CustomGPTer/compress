@@ -2,7 +2,7 @@
 
 Compress is a free video compressor for Android. It makes the videos on a phone smaller without a difference you can see, at the full picture size, and carries on with the screen off. The work is done on the phone, so videos are never uploaded. It has no adverts, no accounts and no paid version.
 
-This repository holds the app's public website and its source code.
+This repository holds the app's public website and its releases. The app's own source code is not published.
 
 ## Website
 
@@ -18,17 +18,13 @@ The latest version of the app is on the [Releases page](https://github.com/Custo
 
 The site is plain HTML and CSS with no scripts, cookies or tracking, and is served by GitHub Pages from the `main` branch.
 
-## Source code
+## Encoder source code
 
-The Android app is in the [`android`](android) folder. It is written in Kotlin with Jetpack Compose, and builds with `./gradlew assembleDebug` given JDK 21 and the Android SDK. [`android/README.md`](android/README.md) says more.
-
-The Max quality engine runs FFmpeg with the x264 and x265 encoders. The built program is in the source tree, the script that builds it is in [`android/native`](android/native), and the encoders' own source code is attached to each release as `compress-encoder-sources.zip`.
+The Max quality engine runs FFmpeg with the x264 and x265 encoders, which are free software under the GNU General Public License. Their complete source code, with the script that builds them, is attached to each release as `compress-encoder-sources.zip`.
 
 ## Licence
 
-Copyright &copy; 2026 Jonathan Jackson
-
-Compress is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. It is distributed in the hope that it will be useful, but without any warranty. See [`LICENSE`](LICENSE).
+© 2026 Jonathan Jackson. All rights reserved. The app's own source code is not published.
 
 ## Contact
 
